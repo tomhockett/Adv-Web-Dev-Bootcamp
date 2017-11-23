@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rotations</title>
+  <style>
+    p {
+      height: 50px;
+      width: 50px;
+      background-color: #e74c3c;
+      color: white;
+      border: 2px solid #2c3e50;
+    }
+
+    .transformed {
+      background-color: purple;
+      /* transform-origin is center by default */
+      transform: rotate(45deg);
+      /* we can change the origin from the center */
+      transform-origin: left top;
+    }
+  </style>
+</head>
+<body>
+  <p>Hello</p>
+  <p class="transformed">Hello</p>
+</body>
+</html>

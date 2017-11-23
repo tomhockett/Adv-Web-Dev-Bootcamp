@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scale</title>
+  <style>
+    p {
+      width: 50px;
+      height: 50px;
+      background-color: #1abc9c;
+      color: #ecf0f1;
+      border: 2px solid #2c3e50;
+    }
+
+    .transformed {
+      background-color: #3498db;
+      /* Every aspect (font, border) will also be scaled 
+         Numbers less than 1 will shrink it by percentage.*/
+      /* You can scale only on the x or y axsis */
+      /* transform: scaleX(10); */
+      /* You can also pass it 2 numbers: x and y */
+      /* transform: scale(5 10); */
+      transform: scale(2);
+      /* The element will scale from the center of the object
+        unless you set the transform-origin like so: */
+      transform-origin: 0 0;
+    }
+
+    .transLeft {
+      background-color: #72216b;
+      transform: scale(2);
+      /* moves the origin point to the left side and the top */
+      transform-origin: left top;
+    }
+  </style>
+</head>
+<body>
+  <p>Hello</p>
+  <p class="transformed">Hello</p>
+  <br>
+  <p class="transLeft">Left</p>
+</body>
+</html>

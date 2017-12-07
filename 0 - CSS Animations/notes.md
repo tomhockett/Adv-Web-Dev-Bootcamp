@@ -143,3 +143,57 @@ USE AN AUTO-PREFIXER!
 [Autoprefixer](autoprefixer.github.io) - copy/paste your css here
 
 [Pleeease](http://pleeease.io/) - a Node.js tool
+
+## CSS Transitions
+
+Transitions allow us to control the animation speed, timing, acceleration and a few more when changing css properties on certain elements.
+
+### Transition Properties
+
+* Transition-Duration (how long the change takes)
+* Transition-Property (you can specify which properties to change)
+* Transition-Timing-Function (the acceleration of the transition)
+* Transition-Delay (how long do you wait until the transition starts?)
+
+### Transition-Duration
+
+How long should this transition take?
+
+```css
+transition-duration: 1s;
+transition-duration: 0.5s; /* you can use decimals */
+transition-duration: 3s, 1s; /* we will get to this */
+```
+
+### Transition-Property
+
+This specifies the names of CSS properties to which a transition effect should be applied.
+
+```css
+transition-property: background;
+transition-property: opacity;
+transition-property: transform;
+transition-property: all; /* this is default functionality */
+transition-property: color, opacity; /* no limit on commas here */
+```
+
+### Transition-Delay
+
+How long of a delay before the transition starts?
+
+```css
+transition-delay: 4s;
+transition-delay: 5ms, 10s;
+```
+
+### Transition-Timing-Function
+
+Basically controls the acceleration of our transitions
+
+```css
+transition-timing-function: ease-in;
+transition-timing-function: ease-out;
+transition-timing-function: linear;
+/* and even */
+transition-timing-function: cubic-bezier(0.95, 0.050, 0.795, 0.035);
+```
